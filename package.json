@@ -1,0 +1,42 @@
+{
+  "name": "vite-plugin-remove-console",
+  "version": "0.0.1",
+  "description": "A vite plugin that deletes console.log in the production environment",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup src/index.ts --dts --format cjs,esm --watch",
+    "build": "npm run clean && tsup src/index.ts --dts --format cjs,esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoxian521/vite-plugin-remove-console.git"
+  },
+  "keywords": [
+    "vite",
+    "console",
+    "remove-console"
+  ],
+  "author": "xiaoxian521",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiaoxian521/vite-plugin-remove-console/issues"
+  },
+  "homepage": "https://github.com/xiaoxian521/vite-plugin-remove-console#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@types/node": "^15.6.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "tsup": "^4.11.1",
+    "typescript": "^4.2.4",
+    "vite": "^2.4.0"
+  }
+}
