@@ -27,9 +27,9 @@
   },
   "homepage": "https://github.com/xiaoxian521/vite-plugin-remove-console#readme",
   "devDependencies": {
-    "@babel/core": "^7.16.7",
+    "@babel/core": "latest",
     "@types/node": "^15.6.1",
-    "babel-remove-console": "^0.0.1",
+    "babel-remove-console": "^0.0.2",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",

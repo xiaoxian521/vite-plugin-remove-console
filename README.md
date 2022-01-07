@@ -1,7 +1,8 @@
 # vite-plugin-remove-console
 
-**English** | [中文](./README.zh_CN.md)  
 A vite plugin that deletes console.log in the production environment
+
+**English** | [中文](./README.zh_CN.md)  
 
 ## Install
 

@@ -1,7 +1,8 @@
 # vite-plugin-remove-console
 
-**中文** | [English](./README.md)  
 生产环境删除console.log的vite插件
+
+**中文** | [English](./README.md)  
 
 ## 安装
 
