@@ -4,7 +4,7 @@
   "description": "A vite plugin that deletes console.log in the production environment",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist/index.js"
   ],
   "scripts": {
     "clean": "rimraf dist",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@types/node": "^15.6.1",
-    "babel-plugin-transform-remove-console": "^6.9.4",
+    "babel-remove-console": "^0.0.1",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",

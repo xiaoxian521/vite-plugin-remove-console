@@ -1,5 +1,5 @@
 const { transformSync } = require("@babel/core");
-const myBabelPlugin = require("babel-plugin-transform-remove-console");
+const myBabelPlugin = require("babel-remove-console");
 
 module.exports = (name: string) => {
   const babelConfig = {

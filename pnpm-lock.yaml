@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/core': ^7.16.7
   '@types/node': ^15.6.1
-  babel-plugin-transform-remove-console: ^6.9.4
+  babel-remove-console: ^0.0.1
   eslint: ^7.27.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-prettier: ^3.4.0
@@ -16,7 +16,7 @@ specifiers:
 devDependencies:
   '@babel/core': 7.16.7
   '@types/node': 15.14.9
-  babel-plugin-transform-remove-console: 6.9.4
+  babel-remove-console: 0.0.1
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-prettier: 3.4.1_6e6a25a49a944db0fa38418c3ba4bc86
@@ -370,8 +370,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /babel-plugin-transform-remove-console/6.9.4:
-    resolution: {integrity: sha1-uYA2DAZzhOJLNXpYjYB9PINSd4A=}
+  /babel-remove-console/0.0.1:
+    resolution: {integrity: sha512-iveik3t/LT+GEk9k6uc0Ya+pFLmurvIhYSbwL/7Hbn4g4Nciz6SG/lL+rIQdWmNuS6X6ocijKFtgbcCnjSnh5Q==}
     dev: true
 
   /balanced-match/1.0.2:
