@@ -25,7 +25,7 @@ import removeConsole from 'vite-plugin-remove-console';
 export default defineConfig({
   plugins: [
     vue(),
-    removeConsole("remove")
+    removeConsole()
   ]
 });
 ```
