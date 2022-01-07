@@ -10,7 +10,7 @@ module.exports = (name: string) => {
     },
     transform(_source: string, id: string) {
       if (config.command === 'build') {
-        if (/\.(vue|js|jsx|ts|tsx)$/.test(id)) {
+        if (/\.(vue|js|ts)$/.test(id)) {
           return babelConsoleName(_source)
         }
       }
