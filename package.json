@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev": "tsup src/index.ts --dts --format cjs,esm --watch",
-    "build": "npm run clean && tsup src/index.ts --dts --format cjs,esm"
+    "build": "npm run clean && tsup src/index.ts --dts --format cjs,esm && flow-copy-source src dist/index"
   },
   "repository": {
     "type": "git",
@@ -28,11 +28,14 @@
   "homepage": "https://github.com/xiaoxian521/vite-plugin-remove-console#readme",
   "devDependencies": {
     "@babel/core": "latest",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.7",
+    "@babel/preset-flow": "^7.16.7",
     "@types/node": "^15.6.1",
     "babel-remove-console": "^0.0.2",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "flow-copy-source": "^2.0.9",
     "prettier": "^2.3.0",
     "rimraf": "^3.0.2",
     "tsup": "^4.11.1",
