@@ -7,7 +7,7 @@ A vite plugin that deletes console.log in the production environment
 ## Install
 
 ```bash
-npm add vite-plugin-remove-console -D
+npm install vite-plugin-remove-console -D
 or 
 pnpm add vite-plugin-remove-console -D
 ```

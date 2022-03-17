@@ -7,7 +7,7 @@
 ## 安装
 
 ```bash
-npm add vite-plugin-remove-console -D
+npm install vite-plugin-remove-console -D
 or 
 pnpm add vite-plugin-remove-console -D
 ```
