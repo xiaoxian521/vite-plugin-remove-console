@@ -3,7 +3,6 @@
   "version": "0.0.12",
   "description": "A vite plugin that deletes console.log in the production environment",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
