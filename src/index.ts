@@ -1,6 +1,10 @@
 import type { Plugin } from "vite";
-import type { Options } from "./types";
 import { transforms, getAbsolutePath } from "./utils";
+
+interface Options {
+  /** Don't remove console.log these modules */
+  external?: Array<string>;
+}
 
 module.exports = (options?: Partial<Options>): Plugin => {
   const { external } = options || {};

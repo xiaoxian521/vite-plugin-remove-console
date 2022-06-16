@@ -5,13 +5,13 @@ const config = {
   clean: true,
   minify: true,
   sourcemap: false,
-  dts: true,
+  dts: false
 };
 
 export default defineConfig([
   {
     entry: ["src/index.ts"],
     format: ["cjs"],
-    ...config,
-  },
+    ...config
+  }
 ]);
