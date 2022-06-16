@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "tsup src/index.ts --dts --format cjs,esm --watch",
-    "build": "npm run clean && tsup src/index.ts --dts --format cjs,esm && babel src/ -d dist/"
+    "dev": "tsup src/index.ts --format cjs,esm --watch",
+    "build": "npm run clean && tsup src/index.ts --format cjs,esm && babel src/ -d dist/"
   },
   "repository": {
     "type": "git",
