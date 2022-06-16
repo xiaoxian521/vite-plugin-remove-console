@@ -16,7 +16,10 @@ module.exports = () => {
     },
     transform(_source: string, id: string) {
       if (config.command === "build") {
-        if (/(\.vue|\.[jt]sx?)$/.test(id) && !/node_modules/.test(id)) {
+        if (
+          /(\.vue|\.svelte|\.[jt]sx?)$/.test(id) &&
+          !/node_modules/.test(id)
+        ) {
           return transforms(_source);
         }
       }
