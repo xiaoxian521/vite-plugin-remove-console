@@ -3,12 +3,14 @@
   "version": "0.0.11",
   "description": "A vite plugin that deletes console.log in the production environment",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "lint": "prettier --write \"src/index.ts\""
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   "homepage": "https://github.com/xiaoxian521/vite-plugin-remove-console#readme",
   "devDependencies": {
     "@types/node": "^15.6.1",
+    "prettier": "^2.7.1",
     "tsup": "^6.1.2",
     "typescript": "^4.7.3",
     "vite": "^2.9.12"

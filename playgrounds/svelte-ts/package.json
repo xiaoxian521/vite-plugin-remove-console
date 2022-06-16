@@ -18,6 +18,6 @@
     "tslib": "^2.4.0",
     "typescript": "^4.6.4",
     "vite": "^2.9.12",
-    "vite-plugin-remove-console": "workspace:^0.0.10"
+    "vite-plugin-remove-console": "^0.0.10"
   }
 }

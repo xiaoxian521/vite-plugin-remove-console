@@ -1,28 +1,26 @@
-import $T from "./transform";
+import type { Plugin } from "vite";
+import type { Options } from "./types";
+import { transforms, getAbsolutePath } from "./utils";
 
-const transforms = (code: string) => {
-  return $T(code, { parseOptions: { sourceType: "module" } })
-    .find(`console.log()`)
-    .remove()
-    .generate();
-};
-
-module.exports = () => {
-  let config: { command: string };
+module.exports = (options?: Partial<Options>): Plugin => {
+  const { external } = options || {};
   return {
-    name: "remove-console",
-    configResolved(resolvedConfig: { command: string }) {
-      config = resolvedConfig;
-    },
+    name: "vite:remove-console",
+    apply: "build",
+    enforce: "post",
     transform(_source: string, id: string) {
-      if (config.command === "build") {
-        if (
-          /(\.vue|\.svelte|\.[jt]sx?)$/.test(id) &&
-          !/node_modules/.test(id)
-        ) {
-          return transforms(_source);
-        }
+      if (/node_modules/.test(id)) return _source;
+      let reg = /(\.vue|\.svelte|\.[jt]sx?)$/.test(id);
+      if (
+        external &&
+        external.length > 0 &&
+        getAbsolutePath(external).includes(id) &&
+        reg
+      ) {
+        return _source;
+      } else {
+        return transforms(_source);
       }
-    },
+    }
   };
 };
