@@ -1,19 +1,25 @@
-const baseBabel = require('./babel')
+import $T from "./transform";
 
-module.exports = (name: string) => {
-  let config: { command: string }
-  const babelConsoleName = baseBabel(name)
+const transforms = (code: string) => {
+  return $T(code, { parseOptions: { sourceType: "module" } })
+    .find(`console.log()`)
+    .remove()
+    .generate();
+};
+
+module.exports = () => {
+  let config: { command: string };
   return {
-    name: 'remove-console',
+    name: "remove-console",
     configResolved(resolvedConfig: { command: string }) {
-      config = resolvedConfig
+      config = resolvedConfig;
     },
     transform(_source: string, id: string) {
-      if (config.command === 'build') {
+      if (config.command === "build") {
         if (/(\.vue|\.[jt]sx?)$/.test(id) && !/node_modules/.test(id)) {
-          return babelConsoleName(_source)
+          return transforms(_source);
         }
       }
-    }
-  }
-}
+    },
+  };
+};
