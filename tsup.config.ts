@@ -5,7 +5,7 @@ const config = {
   clean: true,
   minify: true,
   sourcemap: false,
-  dts: false
+  dts: true
 };
 
 export default defineConfig([
