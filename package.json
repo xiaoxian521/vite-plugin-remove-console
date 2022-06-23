@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-remove-console",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A vite plugin that deletes console.log in the production environment",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
