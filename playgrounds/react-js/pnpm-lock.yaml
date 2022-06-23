@@ -1,13 +1,13 @@
 lockfileVersion: 5.3
 
 specifiers:
-  vite-plugin-remove-console: ^1.0.0
+  vite-plugin-remove-console: ^1.0.3
 
 devDependencies:
-  vite-plugin-remove-console: 1.0.0
+  vite-plugin-remove-console: 1.0.3
 
 packages:
 
-  /vite-plugin-remove-console/1.0.0:
-    resolution: {integrity: sha512-TdCnxBEPojMaX1I2GcEJ3bxaphHSwp8LyXq/xtZSpn2KoWAr3H4v4gFUrVZS41xZWqNqKsQUWAboAckdMdGe2w==}
+  /vite-plugin-remove-console/1.0.3:
+    resolution: {integrity: sha512-kkQ2Kd23FTCu8u4ufnonhXzAU5COOP2HLscv35qGN2GrUev1CyVWE0Jilm/iGZLkx7gvHSTCKy2HX8GoK+FmMQ==}
     dev: true
