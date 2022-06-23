@@ -6,7 +6,7 @@ interface Options {
   external?: Array<string>;
 }
 
-module.exports = (options?: Partial<Options>): Plugin => {
+const removeConsole = (options?: Partial<Options>): Plugin => {
   const { external } = options || {};
   return {
     name: "vite:remove-console",
@@ -28,3 +28,5 @@ module.exports = (options?: Partial<Options>): Plugin => {
     }
   };
 };
+
+export default removeConsole;
