@@ -1,5 +1,1 @@
-*.css linguist-language=Typescript
-*.html linguist-language=Typescript
-*.javascript linguist-language=Typescript
-*.vue linguist-language=Typescript
-*.svelte linguist-language=Typescript
+*.* linguist-language=Typescript
