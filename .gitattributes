@@ -2,3 +2,4 @@
 *.vue linguist-language=Typescript
 *.js linguist-language=Typescript
 *.html linguist-language=Typescript
+*.svelte linguist-language=Typescript
