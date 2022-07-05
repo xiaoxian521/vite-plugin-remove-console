@@ -1,4 +1,4 @@
-import { join } from "path";
+import { resolve } from "path";
 // @ts-expect-error
 import $T from "./transform";
 
@@ -21,6 +21,22 @@ export function transforms(source: string): string {
  */
 export function getAbsolutePath(list: Array<string>): Array<string> {
   return list.map(str => {
-    return join(process.cwd(), str);
+    return pathFormat(resolve(process.cwd(), str));
   });
+}
+
+/**
+ * @description translation path（for windows）
+ * @param path string
+ * @returns string
+ */
+export function pathFormat(path: string) {
+  const translate = /^\\\\\?\\/.test(path);
+  const hasAscii = /[^\u0000-\u0080]+/.test(path);
+
+  if (translate || hasAscii) {
+    return path;
+  }
+
+  return path.replace(/\\/g, "/");
 }
