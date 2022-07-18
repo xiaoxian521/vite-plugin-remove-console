@@ -12,6 +12,6 @@
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.49",
     "svelte": "^3.48.0",
     "vite": "^2.9.12",
-    "vite-plugin-remove-console": "^1.0.3"
+    "vite-plugin-remove-console": "^1.1.0"
   }
 }
