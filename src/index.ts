@@ -13,7 +13,11 @@ module.exports = function removeConsole(options?: Partial<Options>): Plugin {
     apply: "build",
     enforce: "post",
     transform(_source: string, id: string) {
-      if (/node_modules/.test(id)) return _source;
+      if (/node_modules/.test(id))
+        return {
+          code: _source,
+          map: null
+        };
       let reg = /(\.vue|\.svelte|\.[jt]sx?)$/.test(id);
       if (
         external &&
@@ -21,9 +25,15 @@ module.exports = function removeConsole(options?: Partial<Options>): Plugin {
         getAbsolutePath(external).includes(id) &&
         reg
       ) {
-        return _source;
+        return {
+          code: _source,
+          map: null
+        };
       } else {
-        return transforms(_source);
+        return {
+          code: transforms(_source),
+          map: null
+        };
       }
     }
   };
