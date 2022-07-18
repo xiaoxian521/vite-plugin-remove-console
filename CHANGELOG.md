@@ -1,3 +1,7 @@
+## 1.1.0 (2022-07-18)
+
+* feat: support `sourcemap`
+
 ## 1.0.4 (2022-07-05)
 
 * fix: path translation problem of `external` parameter value in windows platform
