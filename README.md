@@ -11,7 +11,7 @@ English | [简体中文](./README.zh_CN.md)
 ## 🚀 Features
 
 - ⚡ **High precision, zero intrusion**: Accurately and complete remove `console.log` in the code, currently supports the removal of file formats `.js`, `.ts`, `.jsx`, `.tsx`, `.vue`, `.svelte`
-- 🧪 **Perfect example**: Currently we have added `preact-js`, `preact-ts`, `react-js`, `react-ts`, `svelte-js`, `svelte-ts`, `vue-js`, `vue-ts` examples to the [playgrounds](https://github.com/xiaoxian521/vite-plugin-remove-console/tree/main/playgrounds) folder, zero usage cost
+- 🧪 **Perfect example**: Currently we have added `preact-js`, `preact-ts`, `react-js`, `react-ts`, `solid-js`, `solid-ts`, `svelte-js`, `svelte-ts`, `vue-js`, `vue-ts` examples to the [playgrounds](https://github.com/xiaoxian521/vite-plugin-remove-console/tree/main/playgrounds) folder, zero usage cost
 - 🦾 **Configurable**: Support passing `external`, which means that some files do not delete `console.log`, for example: `removeConsole({ external: ["src/assets/iconfont/iconfont.js", ...] })`
 
 ## 📦 install

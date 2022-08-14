@@ -11,7 +11,7 @@
 ## 🚀 特性
 
 - ⚡ **高精准、零侵入**: 精准又完整剔除代码中的`console.log`，目前支持剔除文件格式`.js`、`.ts`、`.jsx`、`.tsx`、`.vue`、`.svelte`
-- 🧪 **完善的示例**: 目前我们在[playgrounds](https://github.com/xiaoxian521/vite-plugin-remove-console/tree/main/playgrounds)文件夹中加入了`preact-js`、`preact-ts`、`react-js`、`react-ts`、`svelte-js`、`svelte-ts`、`vue-js`、`vue-ts`示例，零使用成本
+- 🧪 **完善的示例**: 目前我们在[playgrounds](https://github.com/xiaoxian521/vite-plugin-remove-console/tree/main/playgrounds)文件夹中加入了`preact-js`、`preact-ts`、`react-js`、`react-ts`、`solid-js`、 `solid-ts`、 `svelte-js`、`svelte-ts`、`vue-js`、`vue-ts`示例，零使用成本
 - 🦾 **可配置**: 支持传`external`，代表某些文件不进行删除`console.log`的操作，比如像这样：`removeConsole({ external: ["src/assets/iconfont/iconfont.js", ...] })`
 
 ## 📦 安装
