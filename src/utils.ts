@@ -6,7 +6,6 @@ const consoleMethodsToRemove = [
   "log",
   "info",
   "debug",
-  "warn",
   "time",
   "timeLog",
   "timeStamp",
