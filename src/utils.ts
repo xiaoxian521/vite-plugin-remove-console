@@ -2,16 +2,31 @@ import { resolve } from "path";
 // @ts-expect-error
 import $T from "./transform";
 
+const consoleMethodsToRemove = [
+  "log",
+  "info",
+  "debug",
+  "warn",
+  "time",
+  "timeLog",
+  "timeStamp",
+  "timeEnd",
+  "profile",
+  "profileEnd",
+];
+
 /**
  * @description Find console.log from ast syntax tree and delete it
  * @param source SourceMap
- * @returns source after deleting console.log
+ * @returns source after deleting all the console methods from the array
  */
 export function transforms(source: string): string {
-  return $T(source, { parseOptions: { sourceType: "module" } })
-    .find(`console.log()`)
-    .remove()
-    .generate();
+  return consoleMethodsToRemove.reduce((output, method) => {
+    return $T(output, { parseOptions: { sourceType: "module" } })
+      .find(`console.${method}()`)
+      .remove()
+      .generate()
+  }, source);
 }
 
 /**
