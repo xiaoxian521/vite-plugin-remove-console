@@ -1,5 +1,5 @@
 <h1 align="center">vite-plugin-remove-console</h1>
-<p align="center">生产环境删除console.log的vite插件</p>
+<p align="center">生产环境删除所有console.log的vite插件</p>
 
 <p align="center">
 <a href="https://www.npmjs.com/package/vite-plugin-remove-console" target="__blank"><img src="https://img.shields.io/npm/v/vite-plugin-remove-console?color=a1b858&label=" alt="NPM version"></a>
