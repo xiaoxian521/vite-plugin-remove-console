@@ -1,12 +1,10 @@
-import type { Plugin } from "vite";
+import { Options } from "./types";
+import type { PluginOption } from "vite";
 import { transforms, getAbsolutePath } from "./utils";
 
-interface Options {
-  /** Don't remove console.log these modules */
-  external?: Array<string>;
-}
-
-module.exports = function removeConsole(options?: Partial<Options>): Plugin {
+export default function removeConsole(
+  options: Partial<Options> = {}
+): PluginOption {
   const { external } = options || {};
   return {
     name: "vite:remove-console",
@@ -37,6 +35,6 @@ module.exports = function removeConsole(options?: Partial<Options>): Plugin {
       }
     }
   };
-};
+}
 
-module.exports.default = module.exports;
+export type { PluginOption };
