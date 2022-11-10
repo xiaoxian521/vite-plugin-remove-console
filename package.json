@@ -2,12 +2,20 @@
   "name": "vite-plugin-remove-console",
   "version": "1.2.0",
   "description": "A vite plugin that deletes console.log in the production environment",
-  "module": "dist/index.js",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",

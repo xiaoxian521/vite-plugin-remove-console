@@ -4,14 +4,15 @@ const config = {
   outDir: "dist",
   clean: true,
   minify: true,
-  sourcemap: false,
-  dts: true
+  sourcemap: false
 };
 
 export default defineConfig([
   {
     entry: ["src/index.ts"],
-    format: ["cjs"],
+    dts: true,
+    treeshake: true,
+    format: ["esm", "cjs"],
     ...config
   }
 ]);
