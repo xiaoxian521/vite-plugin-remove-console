@@ -1,3 +1,7 @@
+## 1.3.0 (2022-11-10)
+
+- compatible with `esm` and `cjs`
+
 ## 1.2.0 (2022-11-08)
 
 - fix: build error `export { removeConsole as default }`
