@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.2.0",
-    "vite": "^2.9.12",
-    "vite-plugin-remove-console": "^1.1.0"
+    "vite": "^4.0.0",
+    "vite-plugin-remove-console": "^1.3.0"
   }
 }
