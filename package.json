@@ -25,6 +25,9 @@
     "type": "git",
     "url": "git+https://github.com/xiaoxian521/vite-plugin-remove-console.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "vite",
     "console",
