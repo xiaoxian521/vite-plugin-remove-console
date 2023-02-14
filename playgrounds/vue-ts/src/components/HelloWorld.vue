@@ -1,24 +1,43 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from "vue"
 
-defineProps<{ msg: string }>();
+defineProps<{ msg: string }>()
 
-const count = ref(0);
+const count = ref(0)
 
 function onClick() {
-  count.value++;
+  count.value++
   console.log(
     "%cConsole Log Test===>>>: ",
     "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
     "Console Log Test"
-  );
+  )
 }
 
 console.log(
   "%cConsole Log Test===>>>: ",
   "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
   "Console Log Test"
-);
+)
+
+
+console.warn(
+  "%cConsole warn Test===>>>: ",
+  "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
+  "Console warn Test"
+)
+
+console.error(
+  "%cConsole error Test===>>>: ",
+  "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
+  "Console error Test"
+)
+
+console.info(
+  "%cConsole info Test===>>>: ",
+  "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
+  "Console info Test"
+)
 </script>
 
 <template>
@@ -34,9 +53,8 @@ console.log(
 
   <p>
     Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
+    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite
+    starter
   </p>
   <p>
     Install
