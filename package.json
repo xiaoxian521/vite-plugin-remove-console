@@ -19,7 +19,8 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "lint": "prettier --write \"src/index.ts\""
+    "lint": "prettier --write \"src/index.ts\"",
+    "pub": "pub"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
   },
   "homepage": "https://github.com/xiaoxian521/vite-plugin-remove-console#readme",
   "devDependencies": {
+    "@pureadmin/release": "^1.0.0",
     "@types/node": "^15.6.1",
     "prettier": "^2.7.1",
     "tsup": "^6.4.0",
