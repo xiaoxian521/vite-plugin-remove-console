@@ -3,13 +3,24 @@ import { resolve } from "path";
 import $T from "./transform";
 
 /**
- * @description Find console.log from ast syntax tree and delete it
+ * @description Find console types from ast syntax tree and remove
  * @param source SourceMap
- * @returns source after deleting console.log
+ * @returns source after remove console types
  */
-export function transforms(source: string): string {
+export function transforms(
+  source: string,
+  includes: string[] | undefined
+): string {
+  let consoles: string[] = [];
+  if (includes) {
+    includes.map(type => {
+      consoles.push(`console.${type}()`);
+    });
+  } else {
+    consoles = [`console.log()`];
+  }
   return $T(source, { parseOptions: { sourceType: "module" } })
-    .find(`console.log()`)
+    .find(consoles)
     .remove()
     .generate();
 }

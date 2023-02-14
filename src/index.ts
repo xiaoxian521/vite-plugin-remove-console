@@ -5,7 +5,7 @@ import { transforms, getAbsolutePath } from "./utils";
 export default function removeConsole(
   options: Partial<Options> = {}
 ): PluginOption {
-  const { external } = options || {};
+  const { external, includes } = options || {};
   return {
     name: "vite:remove-console",
     apply: "build",
@@ -29,7 +29,7 @@ export default function removeConsole(
         };
       } else {
         return {
-          code: transforms(_source),
+          code: transforms(_source, includes),
           map: null
         };
       }

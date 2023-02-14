@@ -1,4 +1,6 @@
 export interface Options {
-  /** Don't remove console.log these modules */
-  external?: Array<string>;
+  /** The types of console that needs to be removed, such as log、warn、error、info, default log */
+  includes?: string[] | undefined;
+  /** Don't remove the types of console these modules */
+  external?: string[] | undefined;
 }

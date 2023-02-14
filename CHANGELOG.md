@@ -1,3 +1,7 @@
+## 2.0.0 (2023-02-14)
+
+- feat: supports passing `includes` to specify the type of `console` that needs to be removed, for example like this: `removeConsole({ includes: ["log", "warn", "error", "info", ...] })`, If `includes` is not passed, `console.log` will be removed by default
+
 ## 1.3.0 (2022-11-10)
 
 - compatible with `esm` and `cjs`
