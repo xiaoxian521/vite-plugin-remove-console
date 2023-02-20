@@ -14,11 +14,11 @@
 - 🧪 **完善的示例**: 目前我们在 [playgrounds](https://github.com/xiaoxian521/vite-plugin-remove-console/tree/main/playgrounds) 文件夹中加入了 `preact-js`、`preact-ts`、`react-js`、`react-ts`、`solid-js`、 `solid-ts`、 `svelte-js`、`svelte-ts`、`vue-js`、`vue-ts` 示例，零使用成本
 - 🦾 **可配置**:
 
-| **配置项名称**  | **是否必须** | **含义**                                                                                               | **类型**          | **举例**                                                                |
-| --------------- | ------------ | ------------------------------------------------------------------------------------------------------ | ----------------- | ----------------------------------------------------------------------- |
-| `external`      | 否           | 代表某些文件不进行删除指定 `console` 类型的操作                                                        | `Array<string \>` | `removeConsole({ external: ["src/assets/iconfont/iconfont.js", ...] })` |
-| `includes`      | 否           | 指定需要删除的 `console` 类型，不传 `includes` 默认删除 `console.log`                                  | `Array<string \>` | `removeConsole({ includes: ["log", "warn", "error", "info", ...] })`    |
-| `externalValue` | 否           | 保留某些 `console` 语句，若 `console`的 `value` 中有传入的 `externalValue` 值，则此 `console` 会被保留 | `Array<string \>` | `removeConsole({ externalValue: ["这个不删", "noRemove", "aa", ...] })` |
+| **配置项名称**  | **是否必须** | **含义**                                                                                               | **类型**        | **举例**                                                                |
+| --------------- | ------------ | ------------------------------------------------------------------------------------------------------ | --------------- | ----------------------------------------------------------------------- |
+| `external`      | 否           | 代表某些文件不进行删除指定 `console` 类型的操作                                                        | `Array<string>` | `removeConsole({ external: ["src/assets/iconfont/iconfont.js", ...] })` |
+| `includes`      | 否           | 指定需要删除的 `console` 类型，不传 `includes` 默认删除 `console.log`                                  | `Array<string>` | `removeConsole({ includes: ["log", "warn", "error", "info", ...] })`    |
+| `externalValue` | 否           | 保留某些 `console` 语句，若 `console`的 `value` 中有传入的 `externalValue` 值，则此 `console` 会被保留 | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", "aa", ...] })` |
 
 ## 📦 安装
 
