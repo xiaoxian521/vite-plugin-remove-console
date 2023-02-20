@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 defineProps({
-  msg: String,
+  msg: String
 });
 
 const count = ref(0);
@@ -19,6 +19,16 @@ console.log(
   "%cConsole Log Test===>>>: ",
   "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
   "Console Log Test"
+);
+console.log(
+  "%cConsole Log Test===>>>: ",
+  "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
+  "这个不能删除"
+);
+console.log(
+  "%cConsole aa Log Test===>>>: ",
+  "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
+  "Console Log Test aa"
 );
 </script>
 

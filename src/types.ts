@@ -3,4 +3,6 @@ export interface Options {
   includes?: string[] | undefined;
   /** Don't remove the types of console these modules */
   external?: string[] | undefined;
+  /** Do not remove the log that contains this value */
+  externalValue?: string[];
 }
