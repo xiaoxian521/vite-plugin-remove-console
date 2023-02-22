@@ -12,7 +12,13 @@
 
 - ⚡ **高精准、零侵入**: 精准又完整剔除代码中指定的 `console` 类型，目前支持剔除文件格式 `.js`、`.ts`、`.jsx`、`.tsx`、`.vue`、`.svelte`
 - 🧪 **完善的示例**: 目前我们在 [playgrounds](https://github.com/xiaoxian521/vite-plugin-remove-console/tree/main/playgrounds) 文件夹中加入了 `preact-js`、`preact-ts`、`react-js`、`react-ts`、`solid-js`、 `solid-ts`、 `svelte-js`、`svelte-ts`、`vue-js`、`vue-ts` 示例，零使用成本
-- 🦾 **可配置**: 支持传 `external` 代表某些文件不进行删除指定 `console` 类型的操作，比如像这样：`removeConsole({ external: ["src/assets/iconfont/iconfont.js", ...] })`，支持传 `includes` 指定需要删除的 `console` 类型，比如像这样：`removeConsole({ includes: ["log", "warn", "error", "info", ...] })`，如果不传 `includes` 默认删除 `console.log`
+- 🦾 **可配置**:
+
+| **配置项名称**  | **是否必须** | **含义**                                                                                               | **类型**        | **举例**                                                                |
+| --------------- | ------------ | ------------------------------------------------------------------------------------------------------ | --------------- | ----------------------------------------------------------------------- |
+| `external`      | 否           | 代表某些文件不进行删除指定 `console` 类型的操作                                                        | `Array<string>` | `removeConsole({ external: ["src/assets/iconfont/iconfont.js", ...] })` |
+| `includes`      | 否           | 指定需要删除的 `console` 类型，不传 `includes` 默认删除 `console.log`                                  | `Array<string>` | `removeConsole({ includes: ["log", "warn", "error", "info", ...] })`    |
+| `externalValue` | 否           | 保留某些 `console` 语句，若 `console`的 `value` 中有传入的 `externalValue` 值，则此 `console` 会被保留 | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", "aa", ...] })` |
 
 ## 📦 安装
 
