@@ -20,6 +20,12 @@ English | [简体中文](./README.zh_CN.md)
   | `includes`              | No   | supports passing `includes` to specify the type of `console` that needs to be removed，If `includes` is not passed, `console.log` will be removed by default | `Array<string>` | `removeConsole ({includes: ["log", "warn", "error", "info",...]})`    |
   | `externalValue`         | No   | some `console` statements are reserved, if there is an incoming `externalValue` value in the `value` of the `console`, the `console ` will be preserved      | `Array<string>` | `removeConsole ({externalValue: [ "noRemove", "aa",...]})`            |
 
+<style>
+table th {
+  width: 20%;
+}
+</style>
+
 ## 📦 install
 
 ```bash
