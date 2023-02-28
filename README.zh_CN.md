@@ -18,7 +18,7 @@
 | --------------- | ------------ | ------------------------------------------------------------------------------------------------------ | --------------- | ----------------------------------------------------------------------- |
 | `external`      | 否           | 代表某些文件不进行删除指定 `console` 类型的操作                                                        | `Array<string>` | `removeConsole({ external: ["src/assets/iconfont/iconfont.js", ...] })` |
 | `includes`      | 否           | 指定需要删除的 `console` 类型，不传 `includes` 默认删除 `console.log`                                  | `Array<string>` | `removeConsole({ includes: ["log", "warn", "error", "info", ...] })`    |
-| `externalValue` | 否           | 保留某些 `console` 语句，若 `console`的 `value` 中有传入的 `externalValue` 值，则此 `console` 会被保留 | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", "aa", ...] })` |
+| `externalValue` | 否           | 保留某些 `console` 语句，若 `console`的 `value` 中有传入的 `externalValue` 值，则此 `console` 会被保留 | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", ...] })`       |
 
 ## 📦 安装
 

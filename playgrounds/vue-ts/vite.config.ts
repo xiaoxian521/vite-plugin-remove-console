@@ -6,7 +6,10 @@ import removeConsole from "../../dist/index.mjs";
 export default defineConfig({
   plugins: [
     vue(),
-    removeConsole({ includes: ["log", "warn", "error", "info"] })
+    removeConsole({
+      includes: ["log", "warn", "error", "info"],
+      externalValue: ["这个不删", "noRemove"]
+    })
   ],
   build: { sourcemap: true }
 });

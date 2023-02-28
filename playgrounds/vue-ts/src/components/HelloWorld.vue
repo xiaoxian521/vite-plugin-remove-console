@@ -38,6 +38,17 @@ console.info(
   "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
   "Console info Test"
 )
+
+console.log(
+  "%cConsole Log Test===>>>: ",
+  "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
+  "这个不删"
+)
+console.log(
+  "%cConsole Log Test===>>>: ",
+  "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
+  "noRemove"
+)
 </script>
 
 <template>
