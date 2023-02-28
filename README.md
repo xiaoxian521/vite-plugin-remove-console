@@ -14,11 +14,11 @@ English | [简体中文](./README.zh_CN.md)
 - 🧪 **Perfect example**: Currently we have added `preact-js`, `preact-ts`, `react-js`, `react-ts`, `solid-js`, `solid-ts`, `svelte-js`, `svelte-ts`, `vue-js`, `vue-ts` examples to the [playgrounds](https://github.com/xiaoxian521/vite-plugin-remove-console/tree/main/playgrounds) folder, zero usage cost
 - 🦾 **Configurable**:
 
-  | Configuration item name | must | meaning                                                                                                                                                      | type            | example                                                               |
-  | ----------------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- | --------------------------------------------------------------------- |
-  | `external`              | No   | supported to pass external to represent certain files not to delete the specified `console` type of operation                                                | `Array<string>` | `removeConsole ({external: ["src/assets/iconfont/iconfont.js",...]})` |
-  | `includes`              | No   | supports passing `includes` to specify the type of `console` that needs to be removed，If `includes` is not passed, `console.log` will be removed by default | `Array<string>` | `removeConsole({ includes: ["log", "warn", "error", "info", ...] })`  |
-  | `externalValue`         | No   | some `console` statements are reserved, if there is an incoming `externalValue` value in the `value` of the `console`, the `console ` will be preserved      | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", ...] })`     |
+  | Configuration item name | must | meaning                                                                                                                                                      | type            | example                                                              |
+  | ----------------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- | -------------------------------------------------------------------- |
+  | `external`              | No   | supported to pass external to represent certain files not to delete the specified `console` type of operation                                                | `Array<string>` | `removeConsole({external: ["src/assets/iconfont/iconfont.js",...]})` |
+  | `includes`              | No   | supports passing `includes` to specify the type of `console` that needs to be removed，If `includes` is not passed, `console.log` will be removed by default | `Array<string>` | `removeConsole({ includes: ["log", "warn", "error", "info", ...] })` |
+  | `externalValue`         | No   | some `console` statements are reserved, if there is an incoming `externalValue` value in the `value` of the `console`, the `console ` will be preserved      | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", ...] })`    |
 
 ## 📦 install
 
