@@ -1,3 +1,7 @@
+## 2.1.0 (2023-02-28)
+
+- feat: support retaining the specified console by configuring `externalValue` without remove it, for example like this: `removeConsole({ externalValue: ["这个不删", "noRemove", ...] })`
+
 ## 2.0.0 (2023-02-14)
 
 - feat: supports passing `includes` to specify the type of `console` that needs to be removed, for example like this: `removeConsole({ includes: ["log", "warn", "error", "info", ...] })`, If `includes` is not passed, `console.log` will be removed by default
