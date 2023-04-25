@@ -1,3 +1,8 @@
+## 2.1.1 (2023-04-26)
+
+- feat: add `nuxt3` demo in playgrounds
+- perf: types
+
 ## 2.1.0 (2023-02-28)
 
 - feat: support retaining the specified console by configuring `externalValue` without remove it, for example like this: `removeConsole({ externalValue: ["这个不删", "noRemove", ...] })`
