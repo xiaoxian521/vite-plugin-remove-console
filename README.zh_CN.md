@@ -11,7 +11,7 @@
 ## 🚀 特性
 
 - ⚡ **高精准、零侵入**: 精准又完整剔除代码中指定的 `console` 类型，目前支持剔除文件格式 `.js`、`.ts`、`.jsx`、`.tsx`、`.vue`、`.svelte`
-- 🧪 **完善的示例**: 目前我们在 [playgrounds](https://github.com/xiaoxian521/vite-plugin-remove-console/tree/main/playgrounds) 文件夹中加入了 `preact-js`、`preact-ts`、`react-js`、`react-ts`、`solid-js`、 `solid-ts`、 `svelte-js`、`svelte-ts`、`vue-js`、`vue-ts` 示例，零使用成本
+- 🧪 **完善的示例**: 目前我们在 [playgrounds](https://github.com/xiaoxian521/vite-plugin-remove-console/tree/main/playgrounds) 文件夹中加入了 `nuxt3`、`preact-js`、`preact-ts`、`react-js`、`react-ts`、`solid-js`、 `solid-ts`、 `svelte-js`、`svelte-ts`、`vue-js`、`vue-ts` 示例，零使用成本
 - 🦾 **可配置**:
 
 | **配置项名称**  | **是否必须** | **含义**                                                                                               | **类型**        | **举例**                                                                |
@@ -47,4 +47,4 @@ Refer to [more examples](https://github.com/xiaoxian521/vite-plugin-remove-conso
 
 ## 许可证
 
-[MIT © xiaoxian521-latest](./LICENSE)
+[MIT © 2022-present, xiaoxian521](./LICENSE)
