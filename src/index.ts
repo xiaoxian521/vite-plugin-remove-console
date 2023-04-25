@@ -2,6 +2,7 @@ import { Options } from "./types";
 import type { PluginOption } from "vite";
 import { transforms, getAbsolutePath } from "./utils";
 
+/** https://github.com/xiaoxian521/vite-plugin-remove-console#-configurable */
 export default function removeConsole(
   options: Partial<Options> = {}
 ): PluginOption {
