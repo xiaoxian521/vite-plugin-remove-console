@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "@playgrounds/nuxt3",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -10,6 +10,6 @@
   "devDependencies": {
     "@types/node": "^18",
     "nuxt": "^3.4.2",
-    "vite-plugin-remove-console": "^2.1.0"
+    "vite-plugin-remove-console": "workspace:*"
   }
 }

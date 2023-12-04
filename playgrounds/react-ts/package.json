@@ -1,5 +1,5 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "@playgrounds/react-ts",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -18,6 +18,6 @@
     "@vitejs/plugin-react": "^4.0.0",
     "typescript": "^5.0.4",
     "vite": "^4.3.2",
-    "vite-plugin-remove-console": "^2.1.0"
+    "vite-plugin-remove-console": "workspace:*"
   }
 }

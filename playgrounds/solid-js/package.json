@@ -1,5 +1,5 @@
 {
-  "name": "vite-template-solid",
+  "name": "@playgrounds/solid-js",
   "version": "0.0.0",
   "description": "",
   "scripts": {
@@ -9,12 +9,12 @@
     "preview": "vite build && vite preview"
   },
   "license": "MIT",
-  "devDependencies": {
-    "vite": "^4.3.2",
-    "vite-plugin-remove-console": "^2.1.0",
-    "vite-plugin-solid": "^2.7.0"
-  },
   "dependencies": {
     "solid-js": "^1.7.3"
+  },
+  "devDependencies": {
+    "vite": "^4.3.2",
+    "vite-plugin-solid": "^2.7.0",
+    "vite-plugin-remove-console": "workspace:*"
   }
 }

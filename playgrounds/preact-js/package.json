@@ -1,5 +1,5 @@
 {
-  "name": "vite-preact-starter",
+  "name": "@playgrounds/preact-js",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,6 +14,6 @@
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",
     "vite": "^4.3.2",
-    "vite-plugin-remove-console": "^2.1.0"
+    "vite-plugin-remove-console": "workspace:*"
   }
 }

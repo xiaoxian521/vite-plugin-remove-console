@@ -21,6 +21,9 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "format": "prettier --check --write .",
+    "clean": "pnpm store prune && pnpm install",
+    "vue-ts:dev": "pnpm -F @playgrounds/vue-ts run dev",
+    "vue-ts:preview": "pnpm -F @playgrounds/vue-ts run preview",
     "pub": "pub"
   },
   "repository": {
