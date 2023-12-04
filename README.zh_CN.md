@@ -20,22 +20,27 @@
 | :-------------- | :------- | :----------------------------------------------------------- | :-------------- | :----------------------------------------------------------- |
 | `external`      | 否       | 代表某些文件不进行删除指定 `console` 类型的操作              | `Array<string>` | `removeConsole({ external: ["src/assets/iconfont/iconfont.js", ...] })` |
 | `includes`      | 否       | 指定需要删除的 `console` 类型，不传 `includes` 默认删除 `console.log` | `Array<string>` | `removeConsole({ includes: ["log", "warn", "error", "info", ...] })` |
-| `externalValue` | 否       | 保留某些 `console` 语句，若 `console`的 `value` 中有传入的 `externalValue` 值，则此 `console` 会被保留 | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", ...] })` |
-| `custom`        | 否       | 完全自定义需要删除的语句，会覆盖`includes`                   | `Array<string>` | `removeConsole({ custom: ["console.log()", "console.warn()", "debugger", ...] })` |
+| `externalValue` | 否       | 保留某些 `console` 语句，若 `console` 的 `value` 中有传入的 `externalValue` 值，则此 `console` 会被保留 | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", ...] })` |
+| `custom`        | 否       | 完全自定义需要删除的语句，会覆盖 `includes`                   | `Array<string>` | `removeConsole({ custom: ["console.log()", "console.warn()", "debugger", ...] })` |
 
 ## 📦 安装
 
 ```bash
+# npm
 npm install vite-plugin-remove-console -D
-or
+
+# or yarn
+yarn add vite-plugin-remove-console -D
+
+# or pnpm
 pnpm add vite-plugin-remove-console -D
 ```
 
-## 🦄 用法
-
-vite.config.ts
+## 📕 用法
 
 ```ts
+// vite.config.ts
+
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import removeConsole from "vite-plugin-remove-console";

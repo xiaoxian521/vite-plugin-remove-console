@@ -21,21 +21,26 @@ English | [简体中文](./README.zh_CN.md)
 | `external`      | No   | supported to pass external to represent certain files not to delete the specified `console` type of operation | `Array<string>` | `removeConsole({external: ["src/assets/iconfont/iconfont.js",...]})` |
 | `includes`      | No   | supports passing `includes` to specify the type of `console` that needs to be removed，If `includes` is not passed, `console.log` will be removed by default | `Array<string>` | `removeConsole({ includes: ["log", "warn", "error", "info", ...] })` |
 | `externalValue` | No   | some `console` statements are reserved, if there is an incoming `externalValue` value in the `value` of the `console`, the `console ` will be preserved | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", ...] })` |
-| custom          | No   | Completely customize the statements that need to be removed, which will overwrite `includes` | `Array<string>` | `removeConsole({ custom: ["console.log()", "console.warn()", "debugger", ...] })` |
+| `custom`          | No   | Completely customize the statements that need to be removed, which will overwrite `includes` | `Array<string>` | `removeConsole({ custom: ["console.log()", "console.warn()", "debugger", ...] })` |
 
 ## 📦 install
 
 ```bash
+# npm
 npm install vite-plugin-remove-console -D
-or
+
+# or yarn
+yarn add vite-plugin-remove-console -D
+
+# or pnpm
 pnpm add vite-plugin-remove-console -D
 ```
 
-## 🦄 Usage
-
-vite.config.ts
+## 📕 Usage
 
 ```ts
+// vite.config.ts
+
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import removeConsole from "vite-plugin-remove-console";
