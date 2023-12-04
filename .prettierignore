@@ -1,0 +1,9 @@
+*.md
+dist
+.vscode
+.DS_Store
+playgrounds
+node_modules
+pnpm-lock.yaml
+src/transform.js
+config.*.timestamp*

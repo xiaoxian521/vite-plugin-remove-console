@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "strict": true,
     "declaration": true,
     "noUnusedLocals": true,
     "esModuleInterop": true,
     "outDir": "dist",
-    "module": "commonjs",
     "lib": ["ESNext"],
     "types": ["vite/client", "node"],
     "sourceMap": false,
