@@ -1,3 +1,9 @@
+# Changelog
+
+## 2.2.0 (2023-12-04)
+
+- feat: add `custom` api, Completely customize the statements that need to be removed, which will overwrite `includes`, for example like this: `removeConsole({ custom: ["console.log()", "console.warn()", "debugger", ...] })`
+
 ## 2.1.1 (2023-04-26)
 
 - feat: add `nuxt3` demo in playgrounds
