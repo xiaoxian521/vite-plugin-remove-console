@@ -6,6 +6,7 @@ defineProps<{ msg: string }>()
 const count = ref(0)
 
 function onClick() {
+  debugger
   count.value++
   console.log(
     "%cConsole Log Test===>>>: ",
@@ -49,6 +50,13 @@ console.log(
   "color: MidnightBlue; background: Aquamarine; font-size: 20px;",
   "noRemove"
 )
+
+let _ = new Promise((_, reject) => { reject(new Error("wrong")) }).then(() => { }).catch(err => { console.log(err) })
+
+// Just testing, not recommended
+let val = ref(1)
+val.value = 6
+val.value = 8
 </script>
 
 <template>
@@ -56,23 +64,8 @@ console.log(
 
   <div class="card">
     <button type="button" @click="onClick">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
+    <h1>{{ val }}</h1>
   </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite
-    starter
-  </p>
-  <p>
-    Install
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
 
 <style scoped>

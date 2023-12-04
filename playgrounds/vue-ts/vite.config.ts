@@ -9,7 +9,16 @@ export default defineConfig({
     vue(),
     removeConsole({
       includes: ["log", "warn", "error", "info"],
-      externalValue: ["这个不删", "noRemove"]
+      externalValue: ["这个不删", "noRemove"],
+      // Completely customize the statements that need to be removed, which will overwrite `includes`
+      custom: [
+        "debugger",
+        "console.log()",
+        // "console.warn()",
+        // "console.error()",
+        // "console.info()",
+        "val.value = 8"
+      ]
     })
   ],
   build: { sourcemap: true }
