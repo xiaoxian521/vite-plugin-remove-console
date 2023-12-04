@@ -10,11 +10,14 @@ import $T from "./transform";
 export function transforms(
   source: string,
   includes: string[] | undefined,
-  externalValue: string[] | undefined
+  externalValue: string[] | undefined,
+  custom: string[] | undefined
 ) {
   let consoles: string[] = [];
-  if (includes) {
-    includes.map(type => {
+  if (Array.isArray(custom) && custom?.length > 0) {
+    consoles = custom;
+  } else if (includes) {
+    includes?.map(type => {
       consoles.push(`console.${type}()`);
     });
   } else {
@@ -29,8 +32,8 @@ export function transforms(
     return findSource
       .each((r: any) => {
         let eValueString = r.value.arguments
-          .map((e: { value: string }) => e.value)
-          .join();
+          ?.map((e: { value: string }) => e.value)
+          ?.join();
 
         const pattern = new RegExp(`(${externalValue.join("|")})`, "g");
         if (!pattern.test(eValueString)) return r.remove();

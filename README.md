@@ -16,11 +16,12 @@ English | [简体中文](./README.zh_CN.md)
 
 #### 🦾 **Configurable**:
 
-| configuration   | must | meaning                                                                                                                                                      | type            | example                                                              |
-| --------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- | -------------------------------------------------------------------- |
-| `external`      | No   | supported to pass external to represent certain files not to delete the specified `console` type of operation                                                | `Array<string>` | `removeConsole({external: ["src/assets/iconfont/iconfont.js",...]})` |
+| configuration   | must | meaning                                                      | type            | example                                                      |
+| :-------------- | :--- | :----------------------------------------------------------- | :-------------- | :----------------------------------------------------------- |
+| `external`      | No   | supported to pass external to represent certain files not to delete the specified `console` type of operation | `Array<string>` | `removeConsole({external: ["src/assets/iconfont/iconfont.js",...]})` |
 | `includes`      | No   | supports passing `includes` to specify the type of `console` that needs to be removed，If `includes` is not passed, `console.log` will be removed by default | `Array<string>` | `removeConsole({ includes: ["log", "warn", "error", "info", ...] })` |
-| `externalValue` | No   | some `console` statements are reserved, if there is an incoming `externalValue` value in the `value` of the `console`, the `console ` will be preserved      | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", ...] })`    |
+| `externalValue` | No   | some `console` statements are reserved, if there is an incoming `externalValue` value in the `value` of the `console`, the `console ` will be preserved | `Array<string>` | `removeConsole({ externalValue: ["这个不删", "noRemove", ...] })` |
+| custom          | No   | Completely customize the statements that need to be removed, which will overwrite `includes` | `Array<string>` | `removeConsole({ custom: ["console.log()", "console.warn()", "debugger", ...] })` |
 
 ## 📦 install
 
